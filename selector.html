@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello DOM</h1>
+    <h1 Class="classA">Hello DOM</h1>
+    <h1>Hello DOM</h1>
+    <h1 id="myid">Hello DOM</h1>
+    
+    <h3 class="classA">Hello DOM</h3>
+    <script>
+        //1. tag selector
+        let h1=document.getElementsByTagName("h1")[0];console.log(h1);
+        h1.innerText="I am JS"
+
+        //2.class selector
+        let classselect=document.getElementsByClassName("classA");
+        
+        console.log(classselect[1]);
+
+        //3.Id selector
+        let myid=document.getElementById("myid");
+
+        console.log(myid);
+
+        //4.query selector
+        let q=document.body.querySelectorAll("#myid");
+        console.log("query selector");
+        console.log(q);
+
+
+    </script>
+
+</body>
+</html>
